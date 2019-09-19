@@ -5,13 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
-
+public class GatewayController {
     @Value("${server.port}")
     String port;
 
-    @RequestMapping("/hello")
-    String hello() {
-        return "Hello, I am from port: " + port;
+    @RequestMapping("/foo")
+    String foo(String foo) {
+        return "参数 foo 的值是：" + foo + "，from port：" + port;
     }
 }

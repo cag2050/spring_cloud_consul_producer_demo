@@ -2,6 +2,7 @@ Spring Cloud 集成 Consul（服务注册与发现）：2个服务端里的第1�
 
 ### 步骤一：创建 Consul 容器
 1.镜像官方网址：https://hub.docker.com/_/consul
+
 2.pull 镜像：
 ```
 docker pull consul:1.6.0
