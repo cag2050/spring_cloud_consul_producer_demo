@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-cloud-consul-producer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: service-producer
+      config:
+        enabled: true
+        format: yaml
+        prefix: config
+        profile-separator: ':'
+        data-key: data
