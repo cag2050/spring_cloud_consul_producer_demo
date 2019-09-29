@@ -54,7 +54,13 @@ server:
 ```
 此时不重新启动此工程，在浏览器上访问http://localhost:8081/foobar，页面显示bar2。可见foo.bar的最新配置在应用不重启的情况下已经生效。
 
-> 待解决问题：此处依赖需要用 spring-cloud-consul-config，用 spring-cloud-starter-consul-config 会提示找不到；那 spring-cloud-starter-consul-config 和 spring-cloud-consul-config 区别是什么？从网上没有搜到答案，待跟进。
+### 问题：
+* 问题：此处依赖需要用 spring-cloud-consul-config，用 spring-cloud-starter-consul-config 会提示找不到；那 spring-cloud-starter-consul-config
+ 和 spring-cloud-consul-config 区别是什么？从网上没有搜到答案，待跟进。
+* 解决：好像都可以。
+可以通过下面的网址，看到依赖的 Group / Artifact。
+1. https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-consul-config/2.1.3.RELEASE
+2. https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-consul-config/2.1.2.RELEASE
 
 > 参考：https://juejin.im/post/5c650f23e51d45012d0663d4#heading-10
 
