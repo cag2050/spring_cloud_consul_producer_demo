@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RefreshScope
 public class ConsulConfigController {
-    @Value("${foo.bar}")
-    String fooBar;
-
-    @RequestMapping("/foobar")
-    String getFooBar() {
-        return fooBar;
-    }
+//    @Value("${foo.bar}")
+//    String fooBar;
+//
+//    @RequestMapping("/foobar")
+//    String getFooBar() {
+//        return fooBar;
+//    }
 }
